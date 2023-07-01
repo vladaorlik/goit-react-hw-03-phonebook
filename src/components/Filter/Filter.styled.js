@@ -13,5 +13,4 @@ font-family: inherit;
 }
 
 `
-
 export default StyledFilter;

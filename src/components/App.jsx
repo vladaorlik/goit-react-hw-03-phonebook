@@ -6,7 +6,6 @@ import ContactForm from 'components/ContactForm';
 
 class App extends Component {
   state = {
-    // contacts: [],
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
       { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
@@ -91,50 +90,3 @@ class App extends Component {
 
 export default App;
 
-// handleChange = e => {
-//   this.setState({ [e.target.name]: e.target.value });
-//   // [e.currentTarget.name]: e.currentTarget.value якщо декілька
-// };
-
-// changeFilter = event => {
-//   this.setState({
-//     filter: event.currentTarget.value,
-//   });
-// };
-
-// handleFilterChange = (e) => {
-//   const target = e.target.value;
-//   this.setState(prevState => ({
-//     filter: target,
-//   }));
-// const filtered = this.filteredContacts();
-
-// this.setState(prevState => ({
-//   contacts: [filtered, ...prevState.contacts],
-// }));
-// console.log('this.state.contacts :>> ', this.state.contacts);
-
-// }
-
-// changeFilter = event => {
-//   this.setState({
-//     filter: event.currentTarget.value,
-//   });
-// };
-
-// filterContacts = contactId => {
-//   this.setState(prevState => ({
-//     contacts: prevState.contacts.filter(contact=> contact.id !== contactId),
-//   }));
-// };
-
-// filteredContacts = () => {
-//   const normalizedFilter = this.state.filter.toLowerCase();
-//   console.log('normalizedFilter :>> ', normalizedFilter);
-//   // чому таке запізнення?
-//   return this.state.contacts.filter(contact =>
-//     contact.name
-//       .toLowerCase()
-//       .includes(normalizedFilter),
-//   );
-// };

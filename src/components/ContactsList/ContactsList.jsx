@@ -2,22 +2,14 @@ import PropTypes from 'prop-types';
 import ContactstItem from 'components/ContactsItem';
 import StyledList from './ContactsList.styled';
 
-// state={
-// conacts: contacts,
-
-// }
-
 function ContactsList({ contacts, filter, onClick }) {
   let filtered = contacts;
-  //
   if (filter) {
     const normalizedFilter = filter.toLowerCase();
     console.log('normalizedFilter :>> ', normalizedFilter);
     filtered = contacts.filter(contact =>
-      // const filtered
       contact.name.toLowerCase().includes(normalizedFilter)
     );
-    // this.setstate prev (state new)
   }
   return (
     <StyledList>
